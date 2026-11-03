@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 610" role="img" aria-labelledby="title desc">
+<title id="title">Simplified female body map</title><desc id="desc">Educational schematic front view with selectable anatomical regions. Not to scale.</desc>
+<rect width="360" height="610" rx="24" fill="#eef4f1"/>
+<g fill="#e7c7b9" stroke="#a77e74" stroke-width="2"><circle cx="180" cy="63" r="31"/><path d="M153 103 Q180 91 207 103 L225 145 L215 260 Q210 284 204 310 L214 410 L205 575 L180 575 L170 418 L160 575 L135 575 L146 410 L155 310 Q149 284 145 260 L135 145 Z"/></g>
+<g fill="none" stroke="#ad8278" stroke-width="2" stroke-linecap="round"><path d="M180 97 L180 295 M150 165 Q180 183 210 165 M151 244 Q180 257 209 244 M155 306 Q180 320 205 306"/></g>
+<g fill="#d9aaa1" stroke="#fff" stroke-width="3"><circle cx="180" cy="61" r="13"/><circle cx="155" cy="169" r="12"/><circle cx="205" cy="169" r="12"/><circle cx="180" cy="236" r="14"/><circle cx="180" cy="293" r="13"/><circle cx="153" cy="313" r="10"/><circle cx="207" cy="313" r="10"/><circle cx="180" cy="355" r="10"/><circle cx="155" cy="455" r="11"/><circle cx="205" cy="455" r="11"/></g>
+<text x="180" y="602" text-anchor="middle" font-family="Arial" font-size="11" fill="#557078">Educational schematic · not to scale</text></svg>
