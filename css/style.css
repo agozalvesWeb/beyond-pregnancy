@@ -34,10 +34,12 @@ h2{font-size:clamp(1.8rem,3vw,2.5rem);margin:0 0 1rem}
 h3{font-size:1.25rem;margin:.1rem 0 .55rem}
 .lead{font-size:1.15rem;color:#3f5960;max-width:650px}
 .hero-art{min-height:310px;border-radius:28px;background:radial-gradient(circle at 70% 25%,#fff 0 7%,transparent 8%),linear-gradient(145deg,#9fb7ad,#d9aaa1);position:relative;overflow:hidden;display:grid;place-items:center}
-.hero-art:before{content:"";position:absolute;width:220px;height:270px;border-radius:48% 48% 38% 38%;background:#f4d9c9;bottom:-50px;left:24%;transform:rotate(-7deg);box-shadow:100px -30px 0 -28px #f2c9b6}
-.hero-art:after{content:"";position:absolute;width:125px;height:155px;border-radius:48% 48% 45% 45%;background:#f7e6d8;bottom:8px;right:18%;box-shadow:inset 0 22px 0 #6d4b42}
+.hero-art:before{display:none;/* replaced by photography */
+content:"";position:absolute;width:220px;height:270px;border-radius:48% 48% 38% 38%;background:#f4d9c9;bottom:-50px;left:24%;transform:rotate(-7deg);box-shadow:100px -30px 0 -28px #f2c9b6}
+.hero-art:after{display:none;/* replaced by photography */
+content:"";position:absolute;width:125px;height:155px;border-radius:48% 48% 45% 45%;background:#f7e6d8;bottom:8px;right:18%;box-shadow:inset 0 22px 0 #6d4b42}
 .hero-quote{position:absolute;right:1.2rem;top:1.2rem;max-width:170px;text-align:right;font-family:Georgia,serif;font-style:italic;font-size:1.15rem;color:#164b59}
-.hero-caption{position:absolute;bottom:1rem;left:1rem;background:rgba(255,255,255,.8);padding:.5rem .8rem;border-radius:999px;font-size:.75rem;font-weight:700}
+.hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;border-radius:inherit}.hero-caption{position:absolute;bottom:1rem;left:1rem;background:rgba(255,255,255,.8);padding:.5rem .8rem;border-radius:999px;font-size:.75rem;font-weight:700}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;border-radius:999px;background:var(--deep);color:white;padding:.8rem 1.2rem;font-weight:750;text-decoration:none;box-shadow:0 5px 15px rgba(22,75,89,.15)}
 .button:hover{background:#0e3945;color:white;transform:translateY(-1px)}
 .button.secondary{background:white;color:var(--deep);border:1px solid var(--line);box-shadow:none}
@@ -56,9 +58,9 @@ h3{font-size:1.25rem;margin:.1rem 0 .55rem}
 .card:nth-child(3n) .card-icon{background:var(--sage-light)}
 .card-link{display:inline-flex;gap:.4rem;align-items:center;font-weight:750;text-decoration:none;margin-top:.6rem}
 .pill{display:inline-flex;background:var(--sky);color:var(--deep);border-radius:999px;padding:.25rem .65rem;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
-.callout{background:var(--deep);color:white;border-radius:24px;padding:2rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem}
-.callout h2,.callout p{color:white}.callout p{opacity:.85;margin:0}
-.page-hero{padding:3rem 0 2.4rem;background:linear-gradient(110deg,#e5eff0,#f8eeeb)}
+.callout{background:linear-gradient(90deg,#f8e8df,#f7eee8);color:var(--ink);border-radius:24px;padding:1rem 1.5rem 1rem 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;overflow:hidden}.callout h2,.callout p{color:var(--ink)}.callout-image{width:30%;align-self:stretch;object-fit:cover;min-height:120px;border-radius:16px;margin:-1rem 0 -1rem 0}
+.callout p{opacity:.85;margin:0}
+.page-hero{padding:3rem 0 2.4rem;background:linear-gradient(90deg,rgba(229,239,240,.98) 0%,rgba(248,238,235,.94) 58%,rgba(248,238,235,.45) 100%),url("../images/hero/mother-athlete-baby.jpg") right center/auto 100% no-repeat}
 .page-hero h1{font-size:clamp(2.3rem,4vw,3.6rem)}
 .breadcrumb{font-size:.82rem;color:var(--muted);margin-bottom:.8rem}
 .content-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:2rem;align-items:start}
@@ -130,3 +132,23 @@ hr{border:0;border-top:1px solid var(--line);margin:1.5rem 0}
  .callout .button{margin-top:1rem}
  .bodymap-figure{min-height:390px}
 }
+
+/* Beyond Pregnancy visual refresh */
+.anatomy-image-wrap{position:relative;width:min(100%,360px);aspect-ratio:360/610;max-height:540px;margin:auto}
+.anatomy-image{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center}
+.anatomy-image-wrap svg{position:absolute;inset:0;width:100%;height:100%;max-height:none;overflow:visible}
+.hero-art{border-radius:24px;background:#dcecf0}
+.hero-quote{background:rgba(255,255,255,.82);padding:.7rem .85rem;border-radius:14px;backdrop-filter:blur(5px);max-width:190px}
+.brand-mark{background:transparent;border:2px solid var(--rose);font-weight:900}
+.card{transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(25,61,69,.13)}
+@media(max-width:580px){
+ .page-hero{background:linear-gradient(90deg,rgba(229,239,240,.98),rgba(248,238,235,.9)),url("../images/hero/mother-athlete-baby.jpg") right center/auto 100% no-repeat}
+ .callout{display:flex;flex-direction:column;align-items:stretch;padding:1rem}
+ .callout-image{width:100%;height:140px;margin:0}
+}
+
+.roadmap-feature{display:grid;grid-template-columns:minmax(180px,300px) 1fr;align-items:center;gap:1.2rem;margin:0 0 1.2rem;background:#fff;border:1px solid var(--line);border-radius:20px;padding:.8rem;box-shadow:var(--shadow)}
+.roadmap-feature img{width:100%;height:180px;object-fit:cover;border-radius:14px}
+.roadmap-feature figcaption{font-size:.95rem;color:var(--muted);font-weight:650;padding:1rem}
+@media(max-width:580px){.roadmap-feature{grid-template-columns:1fr}.roadmap-feature img{height:190px}}
